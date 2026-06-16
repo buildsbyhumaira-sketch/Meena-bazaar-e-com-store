@@ -1,0 +1,99 @@
+@import url("../globalstyles.css");
+
+.Header {
+  background: var(--headerColor);
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 15px 14px;
+  position: sticky;
+  z-index: 5;
+  top: -5px;
+}
+.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.headerA {
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--searchIcon);
+}
+
+.headerSearch {
+  display: flex;
+  flex: 1;
+}
+.headerSearchInput {
+  display: block;
+  height: 35px !important;
+  width: 100%;
+  padding-inline: 5px;
+  border: none;
+  outline: none;
+}
+.headerSearchIcon {
+  box-sizing: content-box;
+  background-color: var(--searchIcon);
+  color: white;
+  height: 35px !important;
+  padding-inline: 5px;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headerOption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 10px;
+}
+.headerOptionL1 {
+  font-size: 11px;
+}
+.headerOptionL2 {
+  font-size: 13px;
+  font-weight: 800;
+}
+.headerOptionBasket {
+  display: flex;
+}
+.BasketCount {
+  margin: 0 2px;
+}
+
+@media (max-width: 550px) {
+  .Header {
+    flex-direction: column !important;
+    gap: 15px;
+  }
+  .headerOption {
+    margin: 0 10px;
+  }
+  .headerOptionL1 {
+    display: none;
+  }
+  .headerOptionL2 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .Header .headerSearch {
+    flex-basis: 100%;
+  }
+  .headerSearch input {
+    width: 60vw;
+  }
+}
+@media (max-width: 355px) {
+  .headerOption {
+    margin: 0 5px;
+  }
+}

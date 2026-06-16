@@ -1,0 +1,12 @@
+:root {
+  --headerColor: #2e3532;
+  --searchIcon: #f56416;
+  --btngrad: #ff5900;
+  --appbackcolor: rgb(234, 237, 237);
+  --btnpadding: 8px 10px;
+  --btnBorder: 2px solid var(--btngrad);
+  --shadow1: 0px 0px 1px 0px;
+  --shadow2: 0px 0px 2px 0px;
+  --shadow3: 0px 0px 3px 0px;
+  --shadow4: 0px 0px 5px 2px black;
+}

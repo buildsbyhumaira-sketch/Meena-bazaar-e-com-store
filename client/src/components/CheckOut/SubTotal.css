@@ -1,0 +1,20 @@
+@import url("../globalstyles.css");
+.subTotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 130px;
+  background-color: white;
+  margin: 10px 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 2px 0;
+}
+.subTotal input {
+  margin-right: 10px;
+}
+.subTotal button {
+  background-color: var(--searchIcon);
+  border: var(--btnBorder);
+  padding: var(--btnpadding);
+  width: 100%;
+}

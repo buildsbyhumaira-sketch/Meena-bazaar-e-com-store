@@ -1,0 +1,43 @@
+@import url("../globalstyles.css");
+
+.checkOutProduct {
+  display: flex;
+  background-color: white;
+  margin: 10px 5px;
+  padding: 10px;
+  box-shadow: 0px 0px 1px 0;
+}
+.checkOutProduct img {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+.checkOutProductInfo {
+  padding-left: 20px;
+}
+.checkOutProductTitle {
+  font-size: 17px;
+  font-weight: 800;
+}
+.checkOutProductPrice {
+  margin: 5px 0;
+}
+.checkOutProductRating {
+  display: flex;
+  margin: 10px 0;
+}
+.quantity {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity input[type="number"] {
+  outline: none;
+  width: 25px;
+  height: 20px;
+  border: none;
+  border-bottom: 2px solid var(--headerColor);
+  color: var(--searchIcon);
+}

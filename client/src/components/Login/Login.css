@@ -1,0 +1,56 @@
+@import url("../globalstyles.css");
+.login {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* padding-bottom: 43px; */
+}
+.Container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: var(--shadow3);
+}
+.loginLogo {
+  width: 220px;
+  margin-top: -100px;
+  object-fit: contain;
+}
+.Container h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.Container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.Container form input,
+form h5 {
+  margin-bottom: 3px;
+}
+.Container form input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%;
+  border: 1px solid var(--headerColor);
+}
+.Container button {
+  background-color: var(--searchIcon);
+  padding: var(--btnpadding);
+  border: 1px solid var(--btngrad);
+  width: 100%;
+}
+.Container button:hover {
+  color: initial;
+}
+.Container p {
+  margin: 10px 0;
+  font-size: 12px;
+}

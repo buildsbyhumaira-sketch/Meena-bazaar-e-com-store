@@ -1,0 +1,70 @@
+@import url("../globalstyles.css");
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+.banner {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(230, 88, 6, 0.3)
+    ),
+    url("/public/images/aboutus.jpg");
+  background-size: cover;
+  height: 400px !important;
+  color: white;
+  display: grid;
+  place-content: center;
+  font-size: 2vw;
+}
+.aboutUs {
+  margin: 50px 0;
+  padding: 0 20px;
+  text-align: justify;
+}
+.aboutUs .title {
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: var(--searchIcon);
+  font-size: 50px;
+  position: relative;
+}
+.aboutUs .title::after {
+  position: absolute;
+  background-color: var(--headerColor);
+  content: "";
+  width: 50%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+}
+.paragraphs .title {
+  color: var(--searchIcon);
+  font-weight: 700;
+  position: unset;
+  font-size: 22px;
+}
+.paragraphs .title::after {
+  display: none;
+}
+@media (max-width: 786px) {
+  .about {
+    width: 100%;
+  }
+  .banner {
+    font-size: 100%;
+  }
+}

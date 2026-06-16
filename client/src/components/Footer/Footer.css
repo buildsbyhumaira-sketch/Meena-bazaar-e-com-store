@@ -1,0 +1,27 @@
+@import url("../globalstyles.css");
+.footer {
+  background-color: var(--headerColor);
+  color: white;
+  display: flex;
+  padding: 20px;
+  margin-top: auto !important;
+}
+.col1 {
+  flex-basis: 80%;
+  padding-right: 10px;
+}
+.col2,
+.col3 {
+  flex-basis: 20%;
+}
+@media (max-width: 830px) {
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.footer .title {
+  color: var(--searchIcon);
+  margin-bottom: 5px;
+}

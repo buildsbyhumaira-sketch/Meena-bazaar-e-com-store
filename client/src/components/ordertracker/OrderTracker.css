@@ -1,0 +1,101 @@
+@import "../globalstyles.css";
+
+.top {
+  background: var(--searchIcon);
+  height: 120px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+.graphical-table svg {
+  color: var(--searchIcon);
+  width: 40px;
+  height: 40px;
+}
+.status {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.status span {
+  color: var(--searchIcon);
+}
+.graphical-table {
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+  width: 30%;
+  margin: 0 auto;
+  border-left: 6px solid var(--searchIcon);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.graphical-table .row {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  padding: 0 30px;
+  position: relative;
+}
+.graphical-table .row .left::before {
+  position: absolute;
+  left: -10px;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: var(--headerColor);
+  border-radius: 50%;
+}
+.graphical-table .right {
+  font-size: 18px;
+  font-weight: 600;
+}
+.graphical-table .left {
+  margin-right: 100px;
+  color: var(--headerColor);
+}
+.model {
+  display: grid;
+  place-content: center;
+  margin-bottom: 20px;
+}
+.model a {
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  border-width: 0;
+  background-color: var(--searchIcon);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.model a:hover {
+  color: var(--searchIcon);
+  background-color: white;
+  border: 2px solid var(--searchIcon);
+}
+
+@media (max-width: 560px) {
+  .top {
+    font-size: 20px;
+  }
+  .graphical-table {
+    width: 90%;
+  }
+  .graphical-table .right {
+    font-size: 16px !important;
+  }
+  .graphical-table .left {
+    margin-right: 50px;
+  }
+  .model a {
+    padding: 15px 10px;
+  }
+}
+
+.info p {
+  cursor: pointer;
+}

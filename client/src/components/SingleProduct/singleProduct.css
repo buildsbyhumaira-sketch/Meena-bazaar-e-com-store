@@ -1,0 +1,46 @@
+@import url("../globalstyles.css");
+.singleProduct {
+  width: 100%;
+}
+.singleProduct h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: var(--searchIcon);
+}
+.productshow {
+  width: 70%;
+  /* margin-right: 30px; */
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px auto;
+}
+.productshow img {
+  flex-basis: 40%;
+  max-height: 350px;
+  margin-right: 20px;
+  object-fit: cover;
+  box-shadow: var(--shadow2);
+}
+.productshow .des {
+  flex-basis: 45%;
+}
+.productshow .des p {
+  margin: 15px 0;
+}
+.productshow .des button {
+  background-color: var(--searchIcon);
+  padding: var(--btnpadding);
+  border: 1px solid var(--btngrad);
+}
+
+@media (max-width: 900px) {
+  .productshow {
+    width: 90%;
+  }
+}
+@media (max-width: 688px) {
+  .productshow {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

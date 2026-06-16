@@ -1,0 +1,72 @@
+@import url("../globalstyles.css");
+.ProceedToCheckOut {
+  width: 70%;
+  min-height: 80vh;
+  margin: 20px auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 100px;
+  box-shadow: var(--shadow2);
+}
+.ProceedToCheckOut h1 {
+  color: var(--searchIcon);
+}
+.ProceedToCheckOut form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ProceedToCheckOut form label {
+  color: var(--searchIcon);
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.ProceedToCheckOut form input {
+  margin-bottom: 10px;
+  height: 35px !important;
+  border-radius: 2px;
+  border: 1px solid var(--headerColor);
+  padding-inline: 10px;
+  outline: none;
+}
+.ProceedToCheckOut button {
+  background-color: var(--searchIcon);
+  padding: var(--btnpadding);
+  border: var(--btnBorder);
+  margin-top: 20px;
+}
+@media (max-width: 786px) {
+  .ProceedToCheckOut {
+    width: 90%;
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 400px) {
+  .ProceedToCheckOut {
+    width: 100%;
+    padding: 20px;
+  }
+}
+.stat {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--headerColor);
+  color: var(--searchIcon);
+  width: min(80vh, 400px);
+  height: min(35vh, 200px);
+  display: grid;
+  place-content: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow3);
+  transform: rotate(-30deg);
+  opacity: 0;
+}
+.stat.result {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0);
+}

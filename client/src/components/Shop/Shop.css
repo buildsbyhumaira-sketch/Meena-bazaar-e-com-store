@@ -1,0 +1,132 @@
+@import url("../globalstyles.css");
+
+.shop {
+  display: flex;
+  width: 100%;
+}
+.filterBar {
+  position: relative;
+  padding: 10px;
+  flex-basis: 20%;
+  background-color: var(--searchIcon);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  top: 10%;
+  transition: all 0.3s ease;
+}
+.filterBar ul li {
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+}
+.filterBar ul li:first-child {
+  padding-top: 50px;
+}
+.shopProducts {
+  flex-basis: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  gap: 5px;
+  margin-top: 5px;
+}
+.shop .shopProducts .product {
+  align-items: center;
+  flex-basis: 32%;
+}
+.shopProducts .productInfo {
+  width: 100% !important;
+}
+
+@media (max-width: 1050px) {
+  .shop .shopProducts .product {
+    flex-basis: 49.5%;
+  }
+}
+
+.burger {
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.burger::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: -6px;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
+}
+.burger::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
+}
+.burgerDiv {
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+  top: 22px;
+  display: none;
+  height: 20px;
+}
+@media (max-width: 786px) {
+  .shop {
+    flex-direction: column;
+  }
+  .filterBar {
+    display: flex;
+  }
+  .filterBar ul {
+    transform: translateY(-5%);
+    opacity: 0;
+    height: 0;
+  }
+  .filterBar ul.active {
+    transform: translateY(0);
+    opacity: 1;
+    height: auto;
+  }
+  .burgerDiv {
+    display: block;
+  }
+  .burger.active {
+    transform: rotate(-45deg);
+  }
+  .burger.active::after {
+    top: 0;
+  }
+  .burger.burger.active::after {
+    transform: rotate(90deg);
+  }
+
+  .burger.active::before {
+    display: none !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .shop .shopProducts .product {
+    flex-basis: 100% !important;
+  }
+}
